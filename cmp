@@ -1,0 +1,11 @@
+<lightning:buttonMenu  class="{!reportVar.Id}" onselect="{!c.handleClick}">
+                <lightning:menuItem label="Run" value="Run"/>
+                <lightning:menuItem label="Export" value="Export"/>
+                <lightning:menuItem label="{!reportVar.Favourite__c == true ? 'Unfavourite' : 'Favourite'}" value="{!reportVar.Favourite__c == true ? 'Unfavourite' : 'Favourite'}"/>
+                <lightning:menuItem label="{!reportVar.Subscribed__c == true ? 'Unsubscribe' : 'Subscribe'}" value="{!reportVar.Subscribed__c == true ? 'Unsubscribe' : 'Subscribe'}"/>
+                </lightning:buttonMenu> 
+                    </td>
+                    
+                    <!--Row Actions Ends-->
+                </tr>
+            </aura:iteration> 
